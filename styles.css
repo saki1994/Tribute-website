@@ -134,7 +134,7 @@ padding: 0;
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   #main-content {
     grid-template-columns: 1fr;
   }
