@@ -1,0 +1,187 @@
+:root {
+  --txt-font: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: white;
+  font-family: var(--txt-font);
+}
+
+
+#main {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+#img-div {
+  width: 40%;
+}
+
+#image {
+  max-width:100%;
+  max-height: 100%;
+}
+
+#tribute-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#tribute-info > * {
+  margin: 10px;
+}
+
+#title {
+  font-size: calc(20px + 4vw);
+}
+
+#title a:link {
+  text-decoration: none;
+  color: #fff;
+}
+
+#title a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+#title a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+#title a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Italianno', cursive;
+}
+
+#year-lived {
+  font-size: 0.60em;
+}
+
+.qoute {
+  font-size: calc(31px - 1.30em);
+  font-family: var(--txt-font);
+}
+
+/*  MAIN CONTENT STYLES */
+
+#main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-row: auto;
+  margin-top:4%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  grid-gap:15px;
+  justify-content: center;
+}
+
+#life-info {
+  padding: 10%;
+}
+.about-title {
+  font-weight: bold;
+font-size: calc(10px + 1.5vw);
+}
+
+.about-content {
+  font-size: calc(13px - 1%);
+}
+
+.about-list {
+  font-size: calc(15px - 1%);
+  List-style: none;
+padding: 0;
+}
+
+#life-photos {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(2, 25%);
+  width: 90%;
+  text-align: center;
+  position: relative;
+  left: 5%;
+}
+
+#life-photos img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.span-horizontal {
+  grid-row: span 2;
+}
+
+.span-vertical {
+  grid-column: span 2;
+}
+
+.span-big {
+  grid-row: span 2;
+  grid-column: span 2;
+
+}
+
+@media (max-width: 800px) {
+  #main-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* MUSIC SECTION */
+
+#music-section {
+  margin-top:8em;
+}
+.music-header {
+  text-align: center;
+font-size: 4vw;
+}
+
+.videos {
+  display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 50px;
+  justify-content: center;
+  padding: 5%;
+}
+
+.videos iframe {
+  width:100%;
+  height:100%;
+  border: none;
+}
+
+
+/* Message section */
+
+.message {
+  font-size: calc(15px + 2.5vw);
+  font-family: 'Italianno', cursive;
+  text-align: center;
+  padding: 2%;
+  margin-top: 8%;
+  border: 10px ridge white;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+footer {
+  padding: 1%;
+  font-size: 10px;
+  text-align: center;
+}
